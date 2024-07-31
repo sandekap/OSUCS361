@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="robots" content = "noindex, noarchive, nofollow"/>
+    <title>Kapri Sanders</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <title>
+        Add a house to your not interested list.
+    </title>
+</head>
+
+
+<body>
+    <nav class = "global">
+        <a href =./gallery.html>Back</a>
+    </nav>
+<form action ="notInterested.html" method="GET" id="form">
+    <label for ="address">Address:</label><br>
+    <input type ="text" id="address" name="address"><br>
+    <label for="description">Provide a description about what you fo not like about this house</label><br>
+    <input type="text" id="description" name="description">
+    <input type = "submit" value="Add To Not Interested List" onclick ="addHouse()">
+</form>
+</body>
+<script>
+    function addHouse(){
+        if(typeof(localStorage) != "undefined"){
+            localStorage.address = document.getElementById("address").value
+            localStorage.description = document.getElementById("description").value
+        }
+        document.getElementById("form").submit
+    }
+</script>

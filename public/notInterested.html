@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="robots" content = "noindex, noarchive, nofollow"/>
+    <title>Kapri Sanders</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <title>Not Interesed</title>
+</head>
+
+<body onload ="setData()">
+    <h1>Not Interested List</h1>
+    <nav class = "global">
+        <a href = "./index.html">Home</a>
+        <a href = "./login.html">Login</a>
+        <a href = "./gallery.html">View Homes</a>
+        <a href = "./wishlist.html">Wishlist</a>
+    </nav>
+    <h2>This house has been added to your not interested list.</h2>
+    <p id="show">Address: <?php echo $_GET['address'];?></p>
+    <p id ="show2">Why you did not like it:<?php echo $_GET[description];></p>
+
+    <script>
+        function setData(){
+            if(typeof(localStorage) != "undefined"){
+                document.getElementById("show").innerHTML = localStorage.address;
+                document.getElementById("show2").innerHTML = localStorage.description;
+            }
+        }
+    </script>
+</body>

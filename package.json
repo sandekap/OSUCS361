@@ -1,0 +1,16 @@
+{
+  "name": "sandekap",
+  "version": "1.0.0",
+  "description": "This is a running project for my CS 361 class.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Kapri Sanders",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "nodemon": "^3.1.0"
+  }
+}

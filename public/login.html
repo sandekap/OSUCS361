@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="robots" content = "noindex, noarchive, nofollow"/>
+    <title>Kapri Sanders</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+    <header>
+        <h1>Kapri Sanders <img src="android-chrome-192x192.png" alt="Kapri"></h1>
+    </header>
+    <nav class = "global">
+    <a href="./index.html">Home</a>
+    <a href = "./login.html">Login</a>
+    <a href="./gallery.html">Continue as Guest</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Contact</h2>
+            <p>This is a form that I have designed to help me create storylines to write about when I want to create an interesting fiction plot. By adding your input into the rrequired fields and pressing submit, you send those suggestions to my server and help create the story details.</p>
+            <article>
+               <form action = "/suggestions" method = "POST" >
+                <fieldset>
+                    <legend>Please provide your contact details:</legend>
+                    <label for = "name">Tell us your name</label>
+                    <input
+                    type = "text"
+                    name ="name"
+                    id = "name"
+                    size = "40"
+                    maxlength = "50"
+                    placeholder="First and Last"
+                    required
+                    autofocus
+                    />
+                    <label for ="email">What is a good email address to contact you?</label>
+                    <input
+                    type="email"
+                    name = "email"
+                    id = "email"
+                    size = "40"
+                    maxlength = "65"
+                    placeholder = "janedoe@gmail.com"
+                    required
+                    />
+                </fieldset>
+
+
+               </form>
+               <form action="action_page.php" method="post">
+                <label for ="genre">Will you be using this app as a home buyer or seller?</label>
+                    <legend>Select buyer to list a home, or seller to view homes.</legend>
+                    <select name ="genre" id = "genre">
+                        <option value = "Buyer">Buyer</option>
+                        <option value = "Seller">Seller</option>
+                    </select>
+              
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input type="text" placeholder="Enter Username" name="uname" required>
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input type="password" placeholder="Enter Password" name="psw" required>
+              
+                  <button type="submit">Login</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                  </label>
+                </div>
+              
+                <div class="container" style="background-color:#f1f1f1">
+                  <button type="button" class="cancelbtn">Cancel</button>
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+              </form> 
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Kapri Sanders</p>
+    </footer>
+    
+</body>
+</html>
